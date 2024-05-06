@@ -42,18 +42,16 @@ public class InsertOk extends HttpServlet {
   	    bDto.setCategorya(request.getParameter("categorya"));
   	    bDto.setCategoryb(request.getParameter("categoryb"));
   	    bDto.setImname(imname);
-  	    int rs = blogfile.bInsert(bDto);  //본문에 등록하고 auto_increment된 키값을 rs로 반환한다.
+  	    int rs = blogfile.bInsert(bDto);
   	    
-  	    fDto.setImname(imname);  //세션값으로 본문의 imname과 파일 테이블의 imname은 같은 값이다. 
-  	    fDto.setBlog_num(rs);  //blog_num 에 본문 번호를 넣는다. (외래키)
-  	    int rss = blogfile.fileUpdate(fDto);  //imname이 같은 테이블들을 업데이트 한다.
-  	    session.invalidate();   //세션 아웃
+  	    fDto.setImname(imname);  
+  	    fDto.setBlog_num(rs);  
+  	    int rss = blogfile.fileUpdate(fDto); 
+  	    session.invalidate();   
   	    
-  	    //이미지 if else 이용해서 바뀌도록 처리 
-  	    //관리자 모드 목록 , 세부보기 
-  	    //관리자 모드에 로그인 ...
   	    
-  	    out.print("등록했수");
+  	    
+  	    out.print("insertok");
 		doGet(request, response);
 	}
 

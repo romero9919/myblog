@@ -1,12 +1,12 @@
 package net.musecom.util;
 
 public class Pagination {
-   private int listSize; //한 번에 보일 목록의 갯수
-   private int rangeSize;  //한 번에 보여질 페이지 갯수
+   private int listSize; 
+   private int rangeSize; 
    private int page;
    private int range;
-   private int totalCnt; //전체 컬럼 수
-   private int pageCnt; //페이지 수 (전체컬럼 / listSize)
+   private int totalCnt;
+   private int pageCnt;
    private int startPage; 
    private int endPage;
    private int startList;
@@ -15,28 +15,28 @@ public class Pagination {
    private boolean next;
    
    
-   public Pagination(int page, int range, int totalCnt, int listSize, int rangeSize) {  //생성자
+   public Pagination(int page, int range, int totalCnt, int listSize, int rangeSize) {  
 	   this.listSize = listSize;
 	   this.rangeSize = rangeSize;
 	   this.page = page;
 	   this.range= range;
 	   this.totalCnt = totalCnt;
-	   //전체 페이지
+
 	   this.pageCnt = (int) Math.ceil(totalCnt / listSize);
 	   
-	   //시작 페이지
+	   
 	   this.startPage = (range - 1) * rangeSize + 1;
 	   
-	   //끝
+	   
 	   this.endPage = range * rangeSize;
 	   
-	   //시작 번호
+	   
 	   this.startList = (page -1) * listSize;
 	   
-	   //이전 버튼 있기 없기
+	  
 	   this.prev = range == 1 ? false : true;
 	   
-	   //다음 버튼 있기 없기
+	   
 	   this.next = endPage > pageCnt ? false :true;
 	   if(this.endPage > this.pageCnt) {
 		   this.endPage = this.pageCnt;

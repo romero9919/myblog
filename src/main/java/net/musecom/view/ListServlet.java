@@ -23,13 +23,9 @@ public class ListServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
-       //file db 에서 blog_num 가 0 인 컬럼을 검색
-	   //해당 파일을 삭제
-	   //db도 지운다.
-	   //blog 목록을 검색 
-	   //목록에 맞는 file을 검색 	
+      
 	   
-	   String links = "C:\\youjae\\react\\blog-me\\public\\data\\img\\";  //파일이 있는 경로	
+	   String links = "C:\\youjae\\react\\blog-me\\public\\data\\img\\"; 
 	   String fdata;
 	   String flink;
 	   String page = req.getParameter("page");
@@ -55,12 +51,12 @@ public class ListServlet extends HttpServlet {
 			 File file = new File(flink);
 			 if(file.exists()) {
 				 file.delete();
-				 System.out.println(flink + "- 삭제 성공");
+				 System.out.println(flink);
 			 }
 			 blog.fileDelete(flist.getNum());
-			 System.out.println("db 삭제 성공");
+			 System.out.println("db list");
 		  }
-	   }  //쓰레기파일 삭제하는 부분
+	   }  
 		
 	   List<BlogDto> lists = blog.bList(pg);
 

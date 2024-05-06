@@ -47,8 +47,8 @@ public class BlogList extends HttpServlet {
 			combinedDtos.add(new BlogFileDto(dto, fdto));
 		}
 		
-		String gson = new Gson().toJson(combinedDtos);  //gson을 이용해 json 타입으로 변환
-		//대표이미지 가져오기
+		String gson = new Gson().toJson(combinedDtos); 
+
 		out.println(gson);
 		out.close();
 	}

@@ -26,7 +26,7 @@ import net.musecom.database.FileDto;
 @WebServlet("/uploadImageFile")
 public class UploadImageFile extends HttpServlet {
 	
-	//ĳ���ͼ�,���,�̹����ִ�뷮,�������̸�
+
     private static final String CHARSET = "utf-8";
     private static final String ATTACHES_DIR = "D:\\factory\\ws_react\\blog-me\\public\\data\\img";
     private static final int LIMIT_SIZE = 1024 * 1024 * 100;
@@ -56,18 +56,18 @@ public class UploadImageFile extends HttpServlet {
 		      List<FileItem> items = fileUpload.parseRequest(request);
 		      for(FileItem item : items) {
 		    	  
-		    	  //���� �����̸�
+
 		    	  String oname = item.getName();
-		    	  //Ȯ����
+
 		    	  String ext = oname.substring(oname.indexOf('.'));
-                  //������ �̸�
+
 		    	  nfilename = "yj" + Integer.toString((int) (System.currentTimeMillis()/1000));
 		    	  String  nname = nfilename + ext;
 		    	  File uploadedFile = new File(ATTACHES_DIR + File.separator + nname);
 		    	  item.write(uploadedFile);
 		    	  int filesize = (int) item.getSize();
 		    	  
-		    	  System.out.printf("�Ķ���͸� : %s, ���ϸ� : %s, ����ũ�� : %s byte, �����ϸ� : %s \n", 
+		    	  System.out.printf(
 		    			  item.getFieldName(), item.getName(), item.getSize(), nname );
 		    	  int imname = Integer.parseInt((String) session.getAttribute("imname"));
 		    	  fDto.setNewname(nname);
@@ -77,9 +77,9 @@ public class UploadImageFile extends HttpServlet {
 		    	  fDto.setImname(imname);
 		    	    	  
 		    	  int result = blogfile.fileInsert(fDto);
-		    	  System.out.println("������Ʈ�� ��ȣ" + result);
+		    	  System.out.println(result);
 		    	  
-		    	  //json Ÿ������ ����  
+
 		    	  obj.addProperty("url", "http://localhost:3000/data/img/" + nname);
 
 
