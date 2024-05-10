@@ -1,0 +1,70 @@
+body {
+   margin:0;
+   padding-top:113px;
+}
+
+/** Header **/
+.header{
+    border-bottom:1px solid #898F9C;
+    background-color:rgba(255,255,255,.8);
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+}
+p.fw-bold{
+  margin-bottom:8px;
+}
+.sns-icons {
+    font-size: 25px;
+}
+.sns-icons>*{
+  margin-left:5px;
+  margin-right:5px;
+  cursor:pointer;
+  transition: 200ms;
+}
+.sns-icons>*:hover{
+   color:#898F9C;
+}
+.facebook{
+   color:#4267B2;
+}
+.twitter{
+  color:#1DA1F2;
+}
+.instagram{
+  color:#833AB4;
+}
+.kakaotalk{
+  color:#ffe812;
+}
+.h5.card-title small span{
+  font-size:.8em;
+  color:#999;
+  margin-right:10px;
+}
+.h5.card-title small{
+  margin-left:18px;
+}
+.btnbox{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a{
+  font-size:18px;
+  color:#666;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight:700;
+}
+.navbar a:hover{
+  color:green;
+  text-decoration:underline;
+}
+.fw-bold a{
+  color:#000;
+  text-decoration: none;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "writer": "주인장",
+        "img" : "images/b-02.jpg",
+        "categorya": "미국",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    },
+    {
+        "id" : 2,
+        "writer": "주인장",
+        "img" : "images/b-03.jpg",
+        "categorya": "영국",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    },
+    {
+        "id" : 3,
+        "writer": "주인장",
+        "img" : "images/b-04.jpg",
+        "categorya": "일본",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    },
+    {
+        "id" : 4,
+        "writer": "주인장",
+        "img" : "images/b-05.jpg",
+        "categorya": "프랑스",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    },
+    {
+        "id" : 5,
+        "writer": "주인장",
+        "img" : "images/b-06.jpg",
+        "categorya": "이탈리아",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    },
+    {
+        "id" : 6,
+        "writer": "주인장",
+        "img" : "images/b-07.jpg",
+        "categorya": "아일랜드",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행에서 지옥을 맞다.",
+        "content": "배낭여행 다니지 말자. 힘들다. 괴롭다. 흑~!" ,
+        "wdate": "2022-12-10"
+    }    
+]
